@@ -1,0 +1,5 @@
+docker build -t fondberg/node-test-app-1 .
+docker stop node-test-1.server node-test-2.server
+docker rm node-test-2.server node-test-1.server
+docker run -p 49160:8080 -d --network=my-bridge-network --name node-test-1.server fondberg/node-test-app-1
+docker run -p 49161:8080 -d --network=my-bridge-network --name node-test-2.server fondberg/node-test-app-1
