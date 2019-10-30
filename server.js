@@ -11,7 +11,7 @@ const app = express();
 app.get('/', (req, res) => {
   console.log('Got request', JSON.stringify(req.connection.remoteAddress, null, 2));
   console.log('Env', JSON.stringify(process.env, null, 2));
-  res.send('Hello world 12345 and new3\n' + process.env.DBURL + ' - ' + process.env.PARAMTEST1 + '\n');
+  res.send('Hello world Web 15:26\n' + process.env.DBURL + ' - ' + process.env.PARAMTEST1 + '\n');
 });
 
 app.listen(PORT, HOST);
