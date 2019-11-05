@@ -1,0 +1,14 @@
+version: '3.2'
+
+services:
+  api1:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    container_name: my-api.web
+    hostname: my-api.local
+    ports:
+      - "1880:80"
+    environment:
+      - DEBUG=True
+      - DBURL

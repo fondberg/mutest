@@ -4,7 +4,7 @@ const express = require('express');
 const { Client } = require('pg');
 
 // Constants
-const PORT = 8011;
+const PORT = 80;
 const HOST = '0.0.0.0';
 
 // App
